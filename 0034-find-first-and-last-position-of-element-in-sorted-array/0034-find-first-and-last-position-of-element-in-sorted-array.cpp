@@ -4,7 +4,7 @@ public:
         vector<int> answer = {-1, -1};
         vector<int> flag = {-1, -1};
         int size = nums.size();
-
+        //  O(log n) 이 아님. 수정 필요. 집가서 해결해보기 
         for (int i = 0; i < size; i++)
         {
             if (nums[i] == target && flag[0] == -1)
