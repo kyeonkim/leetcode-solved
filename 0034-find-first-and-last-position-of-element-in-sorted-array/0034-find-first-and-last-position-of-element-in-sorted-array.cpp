@@ -3,8 +3,8 @@ public:
     vector<int> searchRange(vector<int>& nums, int target) {
         vector<int> answer = {-1, -1};
 
-        answer[0] = binarySearchTree(nums, target, 0);
-        answer[1] = binarySearchTree(nums, target, 1);
+        answer[0] = binarySearchTree(nums, target, false);
+        answer[1] = binarySearchTree(nums, target, true);
         return answer;
     }
 
